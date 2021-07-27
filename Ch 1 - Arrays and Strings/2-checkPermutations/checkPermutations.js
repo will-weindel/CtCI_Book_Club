@@ -9,7 +9,20 @@
 //A/P - linear (using sucessive for loops)
 
 const checkPermutations = (str1, str2) => {
-  //Please code here
+  let charStorage = {};
+  debugger;
+  for (var char of str1) {
+    if (!charStorage[char]) charStorage[char] = 1;
+    else charStorage[char] += 1;
+  };
+  for (var char of str2) {
+    if (!charStorage[char]) return false;
+    else charStorage[char] -= 1;
+  }
+  for (var key in charStorage) {
+    if (charStorage[key] !== 0) return false;
+  }
+  return true;
 };
 
 module.exports = checkPermutations;
