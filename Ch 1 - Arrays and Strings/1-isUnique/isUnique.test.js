@@ -10,3 +10,7 @@ test('succesfully finds non-unique strings', () => {
   expect(isUnique('Hello')).toBe(isUniqueSol('Hello'));
   expect(isUnique('notUnique')).toBe(isUniqueSol('notUnique'));
 });
+
+test('successfully finds extra unique strings', () => {
+  expect(isUnique('abcdefg')).toBe(isUniqueSol('abcdefg'));
+})
