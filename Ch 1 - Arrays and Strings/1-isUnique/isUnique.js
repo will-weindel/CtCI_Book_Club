@@ -6,6 +6,7 @@
 //E - spaces? empty strings?
 //D - HashTable or object with key
 //A/P - double for loop
+//T - sort and check neighbor?
 
 function isUnique(str) {
   let count = 1;

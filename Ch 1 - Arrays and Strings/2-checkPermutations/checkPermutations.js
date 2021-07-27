@@ -7,6 +7,7 @@
 
 //D - hash / obj
 //A/P - linear (using sucessive for loops)
+//T - sort and check equal?
 
 const checkPermutations = (str1, str2) => {
   let charStorage = {};
