@@ -11,7 +11,6 @@
 
 const checkPermutations = (str1, str2) => {
   let charStorage = {};
-  debugger;
   for (var char of str1) {
     if (!charStorage[char]) charStorage[char] = 1;
     else charStorage[char] += 1;
