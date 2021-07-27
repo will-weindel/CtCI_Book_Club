@@ -18,3 +18,7 @@ test('Correctly identifies strings that are NOT permutations', () => {
     checkPermutationsSol('scooptity', 'whoop')
   );
 });
+
+test('Correcty idents string that is perm', () => {
+  expect(checkPermutations('JimmyJoe', 'JoeJimmy')).toBe(checkPermutationsSol('JimmyJoe', 'JoeJimmy'));
+})
