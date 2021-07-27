@@ -8,11 +8,14 @@
 //A/P - double for loop
 
 function isUnique(str) {
+  let count = 1;
   for (var char of str) {
-    for (var i = 0; i < str.length; i++) {
-
+    for (var i = count; i < str.length; i++) {
+      if (str[i] === char) return false;
     }
+    count++
   }
+  return true;
 }
 
 module.exports = isUnique;
